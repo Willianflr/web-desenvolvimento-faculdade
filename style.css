@@ -1,0 +1,235 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #e8e8e8 ;
+}
+
+.box {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 25px;
+    font-size: 22px;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.destaque {
+    width: 100%;
+}
+
+.principal p {
+    margin: 0 0 15px;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+
+.titulo-centralizado {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 0 15px;
+}
+
+.servicos {
+    width: 995px;
+    margin: 0 auto;
+}
+
+.servicos li {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    margin: 1.5%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.servicos li:hover {
+    border-color: green;
+}
+
+.servicos h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.servicos h2:hover {
+    color: green;
+}
+
+.servicos .descricao {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.servicos .preco {
+    font-size: 25px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0 ;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-text {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: chartreuse;
+}
+
+table {
+    margin: 20px 0 40px; 
+}
+
+th {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid#000000;
+    padding: 8px 15px;
+}
+
+.conteudodiferencial {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferencial {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagemdiferencial {
+    width: 60%;
+    box-shadow: 10px 10px 10px 0 black;
+    margin-bottom: 30px;
+    transition: 400ms;
+}
+
+.imagemdiferencial:hover {
+    opacity: 0.3;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens::before {
+    content: "\27A4";
+}
+
+.video {
+    width: 560px;
+    margin: 15px auto;
+}
+
+.mapa {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.mapa p {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 50px;
+}
+
+
+@media screen and (max-width: 480px){
+    
+    .box, .principal, .conteudodiferencial, .mapa, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        position: static;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .lista-diferencial, .imagemdiferencial, main {
+        width: 100%;
+    }
+
+}
